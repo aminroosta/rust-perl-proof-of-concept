@@ -6,14 +6,16 @@ Module::Install::Rust integrates traditional Perl build system with Cargo, allow
 - Rust 1.31+
 
 ## Testing
+To run tests:
+
+```bash
+dzil test
+```
+
 To install packages required for building and testing:
 
 ```bash
 cpanm --installdeps .
 ```
 
-To run tests:
 
-```bash
-perl Makefile.PL && make test
-```
