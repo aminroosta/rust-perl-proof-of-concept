@@ -24,13 +24,13 @@ xs! {
     }
 }
 
-#[derive(FromPerlKV,Debug)]
+#[derive(FromPerlKV, Debug)]
 struct TestStruct {
-    alpha:          bool,
-    beta:           String,
-    #[perlxs(key="-charlie", key="-charles", key="-chuck")]
-    charlie:        String,
-    delta:          Option<bool>,
+    alpha: bool,
+    beta: String,
+    #[perlxs(key = "-charlie", key = "-charles", key = "-chuck")]
+    charlie: String,
+    delta: Option<bool>,
     #[perlxs(key = "_echo")]
-    echo:          Option<String>,
+    echo: Option<String>,
 }
